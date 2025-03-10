@@ -41,7 +41,7 @@ const Services = () => {
       title: "Code Detangling",
       description: "We transform messy AI-generated code into clean, maintainable, and well-structured systems.",
       delay: 100,
-      color: "#8B5CF6"
+      color: "#F97316" // Changed from purple to orange
     },
     {
       icon: <Code size={24} />,
@@ -55,7 +55,7 @@ const Services = () => {
       title: "System Integration",
       description: "Seamlessly integrate AI components with your existing systems and infrastructure.",
       delay: 300,
-      color: "#F97316"
+      color: "#F97316" // Changed from orange to a consistent orange
     },
     {
       icon: <Brain size={24} />,
@@ -76,7 +76,7 @@ const Services = () => {
       title: "Security Auditing",
       description: "Identify and address security vulnerabilities in AI-generated systems and applications.",
       delay: 600,
-      color: "#F43F5E"
+      color: "#F97316" // Changed from red to orange
     }
   ];
 
