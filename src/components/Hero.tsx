@@ -151,19 +151,19 @@ const Hero = () => {
       />
       <div className="section-container relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-block bg-primary/10 text-primary rounded-full px-6 py-2 text-sm font-bold mb-6 animate-fade-in wiggle">
+          <div className="inline-block bg-primary/10 text-primary rounded-full px-6 py-2 text-sm font-bold mb-6">
             AI Code Superheroes
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8 animate-fade-in-up [animation-delay:200ms]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8">
             We <span className="text-accent wiggle inline-block">Untangle</span> the Mess of <span className="text-primary whitespace-nowrap">AI-Generated Code</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-in-up [animation-delay:400ms] text-balance">
+          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto text-balance">
             Our expert team transforms confusing AI outputs into elegant, maintainable systems that your developers will actually want to work with.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 animate-fade-in-up [animation-delay:600ms]">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <button className="w-full sm:w-auto px-8 py-3 rounded-xl bg-primary text-white cartoon-button">
               See Our Approach
             </button>
@@ -174,7 +174,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce floating">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 5V19M12 19L18 13M12 19L6 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>

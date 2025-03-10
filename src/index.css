@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -84,7 +83,6 @@
   
   .section-title {
     @apply text-3xl md:text-4xl font-bold mb-4 tracking-tight;
-    text-shadow: 2px 2px 0px rgba(var(--primary), 0.2);
   }
   
   .section-subtitle {
@@ -107,14 +105,6 @@
     @apply translate-y-2;
     box-shadow: 0 2px 0 theme('colors.primary.DEFAULT');
   }
-
-  .bounce-hover {
-    transition: transform 0.2s;
-  }
-
-  .bounce-hover:hover {
-    transform: scale(1.05);
-  }
 }
 
 /* For smooth scrolling */
@@ -122,77 +112,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* For animated underline hover effect */
-.hover-underline-animation {
-  position: relative;
-}
-
-.hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: currentColor;
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-/* For blurred image loading */
-.blur-load {
-  background-size: cover;
-  background-position: center;
-}
-
-.blur-load.loaded > img {
-  opacity: 1;
-}
-
-.blur-load > img {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-/* Paper cutout effect */
-.paper-cutout {
-  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
-              0 2px 4px rgba(0,0,0,0.07), 
-              0 4px 8px rgba(0,0,0,0.07), 
-              0 8px 16px rgba(0,0,0,0.07),
-              0 16px 32px rgba(0,0,0,0.07);
-}
-
-/* Squiggly animation for lines */
-.squiggly-line {
-  stroke-dasharray: 10;
-  animation: dash 20s linear infinite;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 1000;
-  }
-}
-
-/* Floating animation */
-.floating {
-  animation: floating 3s ease-in-out infinite;
-}
-
-@keyframes floating {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-
-/* Wiggle animation */
+/* Wiggle animation only for the Untangle text */
 .wiggle {
   animation: wiggle 2.5s infinite;
 }

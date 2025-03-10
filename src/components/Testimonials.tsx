@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -16,7 +15,7 @@ const Testimonial = ({ quote, author, role, company, active, onClick, color }: T
   return (
     <div 
       className={cn(
-        "glass-panel p-8 cursor-pointer transition-all duration-500 paper-cutout",
+        "glass-panel p-8 cursor-pointer transition-all duration-500",
         active ? "border-primary/30 shadow-lg scale-100 opacity-100 rotate-0" : 
                  `scale-95 opacity-70 ${Math.random() > 0.5 ? "rotate-2" : "-rotate-2"}`
       )}
@@ -75,8 +74,8 @@ const Testimonials = () => {
     <section id="testimonials" className="py-20 bg-secondary/50">
       <div className="section-container">
         <div className="text-center mb-16">
-          <h2 className="section-title animate-fade-in-up wiggle">Happy Humans</h2>
-          <p className="section-subtitle animate-fade-in-up [animation-delay:200ms]">
+          <h2 className="section-title">Happy Humans</h2>
+          <p className="section-subtitle">
             See how we've helped companies transform their AI-generated code into elegant, maintainable systems.
           </p>
         </div>
@@ -92,7 +91,7 @@ const Testimonials = () => {
           ))}
         </div>
         
-        <div className="mt-16 text-center animate-fade-in-up [animation-delay:400ms]">
+        <div className="mt-16 text-center">
           <button className="px-8 py-3 rounded-xl bg-white border-2 border-input hover:bg-primary hover:text-white transition-colors cartoon-button">
             View All Case Studies
           </button>
